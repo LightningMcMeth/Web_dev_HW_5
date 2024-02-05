@@ -1,0 +1,37 @@
+doctype html
+html
+    body
+    h1 Create product😮😮
+    form(method='post' action='/products')
+        label(for='name') Product name:
+        br
+        input(type='text' name='name' required, style="width: 80%; padding-left: 50px")
+
+        br
+        br
+
+        label(for='price') Price:
+        br
+        input(type='number' name='price' required, style="width: 80%; padding-left: 50px")
+        
+        br
+        br
+
+        label(for='category') Category:
+        br
+        select(name='category' required, style="width: 8%; padding-left: 50px")
+            option(value='pc parts') PC parts
+            option(value='arcane artifacts') Arcane artifacts
+            option(value='illegal things') Illegal things
+            
+        br
+        br
+
+        label(for='attributes') Attributes:
+        br
+        textarea(name='attributes' required, style="width: 80%; height: 60px; padding-left: 50px")
+
+        br
+        br
+
+        button(type='submit') Submit

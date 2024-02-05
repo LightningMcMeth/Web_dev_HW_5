@@ -1,0 +1,23 @@
+doctype html
+html
+body
+    ul
+    if Array.isArray(products)
+      h1 Products👌👌
+      ul
+        each product in products
+            h3= product.name 
+            li price $#{product.price}
+            li category: #{product.category} 
+            li in stock: #{product.inStock} 
+            li description: #{product.attributes}
+            li prod. id: #{product._id}
+    else 
+        h2 Product with id: #{product._id}
+        ul
+            h2= product.name
+            li price $#{product.price}
+            li category: #{product.category} 
+            li in stock: #{product.inStock} 
+            li description: #{product.attributes}
+            li prod. id: #{product._id}
